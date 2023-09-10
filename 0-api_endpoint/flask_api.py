@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-
+from datetime import datetime
 app = Flask(__name__)
 
 
@@ -9,9 +9,18 @@ def your_endpoint():
     # Get the track and slack name
     slack_name = request.args.get('slack_name')
     track = request.args.get('track')
+    week_day = datetime.now().strftime("%A")
+    t = datetime.utcnow().isoformat().split('.')[0]
+    t = t + 'Z'
+    github_file = "https://github.com/njogued/HNGx/blob/main/0-api_endpoint/flask_api.py"
     data = {
-        "key1": "value1",
-        "key2": "value2"
+        "current_day": week_day,
+        "github_file_url": github_file,
+        "github_repo_url": "https://github.com/njogued/HNGx",
+        "slack_name": slack_name,
+        "utc_time": t,
+        "track": track,
+        "status_code": 200
     }
     response = jsonify(data)
 
