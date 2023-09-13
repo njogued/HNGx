@@ -20,6 +20,16 @@ Note: The person resource has two attributes: the person name and ID
 
 #### Example Usage
 
+On Linux Terminal:  
+GET (all) => curl wget https://crudopsapi.onrender.com/api  
+GET (one) => curl -X GET https://crudopsapi.onrender.com/api/<user:id>
+
+POST => curl -X POST -H "Content-Type: application/json" -d '{"key": "value"}' https://crudopsapi.onrender.com/api/  
+PUT => curl -X PUT -H "Content-Type: application/json" -d '{"key": "value"}' https://crudopsapi.onrender.com/api/<user:id>  
+DELETE => curl -X DELETE https://crudopsapi.onrender.com/api/<user:id>
+
+On POSTMAN: [RTFM](https://learning.postman.com/docs/getting-started/first-steps/sending-the-first-request/#:~:text=Postman%20enables%20you%20to%20create,response%20appears%20right%20inside%20Postman.)
+
 #### Notes for Devs
 
 To run the api on your local machine:
