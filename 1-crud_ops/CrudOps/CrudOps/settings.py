@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-^=b@a(l6*pb3g(fy^gf*78c%wfcw7erzq_8=iy5b91&2kg8%*u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['crudopsapi.onrender.com']
+ALLOWED_HOSTS = ['crudopsapi.onrender.com', 'localhost']
 
 
 # Application definition
