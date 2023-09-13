@@ -16,6 +16,8 @@ READ => /api/user_id - Fetch new person details
 UPDATE => /api/user_id - Modify existing details  
 DELETE => /api/user_id - Remove a person
 
+Note: The person resource has two attributes: the person name and ID
+
 #### Example Usage
 
 #### Notes for Devs
