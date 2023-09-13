@@ -29,4 +29,4 @@ def rud_person(request):
 class UserInfo(generics.RetrieveUpdateDestroyAPIView):
     queryset = Person.objects.all()
     serializer_class = PersonSerializer
-    lookup_field = 'name'
+    # lookup_field = 'name'
