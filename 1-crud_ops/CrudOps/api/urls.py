@@ -4,7 +4,7 @@ from . import views
 urlpatterns = [
     path('api/', views.get_data, name='GET & POST'),
     path('', views.get_data, name='GET & POST'),
-    path('api/<int:pk>/', views.UserInfo.as_view(),
+    path('api/<int:pk>', views.UserInfo.as_view(),
          name="Read, Update, Delete"),
 
     # If using username as lookup field use this path.
