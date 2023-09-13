@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['crudopsapi.onrender.com', 'localhost']
 
-
 # Application definition
 
 INSTALLED_APPS = [
